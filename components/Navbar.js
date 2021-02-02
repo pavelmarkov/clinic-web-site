@@ -6,7 +6,7 @@ const Navbar = () => {
       <header className="header">
         <ul className="header_links">
           <li>
-            <a href="">
+            <a href="/">
               <img src="./img/emblem.svg" alt="АКРОПОЛЬ" className="emblem"></img>
             </a>
           </li>
@@ -31,12 +31,12 @@ const Navbar = () => {
       </header>
       <nav className="header_menu">
         <ul>
-          <li><a href="">О клинике</a></li>
-          <li><a href="">Информация по ОМС</a></li>
-          <li><a href="">Платные услуги</a></li>
-          <li><a href="">Врачи</a></li>
-          <li><a href="">Отзывы о нас</a></li>
-          <li><a href=""><img src="./img/search.svg" alt="" className="search_icon"></img></a></li>
+          <li><a href="/">О клинике</a></li>
+          <li><a href="/">Информация по ОМС</a></li>
+          <li><a href="/">Платные услуги</a></li>
+          <li><a href="/">Врачи</a></li>
+          <li><a href="/">Отзывы о нас</a></li>
+          <li><a href="/"><img src="./img/search.svg" alt="" className="search_icon"></img></a></li>
         </ul>
         <a className="blind_version_link"><img src="./img/red_eye.svg" alt="" className="red_eye_icon"></img>Версия для слабовидящих</a>
         <Link href="/login">
