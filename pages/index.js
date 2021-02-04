@@ -20,9 +20,9 @@ export async function getServerSideProps () {
   // let data = await res.json()
   // console.log(data)
   const data = [
-    {image:{url: "img6.jpg"}, text: '123', button: true},
-    {image:{url: "img4.jpg"}, text: '123', button: false},
-    {image:{url: "img8.jpg"}, text: '123', button: false},
+    {image:{url: "img6.jpg"}, text: '20% скидка на первый прием', button: true},
+    {image:{url: "img4.jpg"}, text: 'Caption Two number #', button: false},
+    {image:{url: "img8.jpg"}, text: 'Caption Three number #', button: false},
   ]
   return {
     props: {
