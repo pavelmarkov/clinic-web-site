@@ -134,6 +134,7 @@ const Navbar = () => {
           height: 32px; */
           width: 15vw;
           height: 3vw;
+          cursor: pointer;
         }
         .place_mark {
           margin-right: 11px;
