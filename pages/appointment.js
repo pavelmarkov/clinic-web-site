@@ -36,7 +36,8 @@ export default function Appointment() {
         {typeof window === 'undefined' ? null : <Step2></Step2>}
       </div> */}
 
-      {renderStep(info.step)}
+      <Step1></Step1>
+      {/* {renderStep(info.step)} */}
     </Layout>
   )
 }
