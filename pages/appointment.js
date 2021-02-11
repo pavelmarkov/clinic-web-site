@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import { useState } from 'react'
 import Router from 'next/router'
-//import Step1 from '../components/Appointment/Step1'
+import Step1 from '../components/Appointment/Step1'
 import Step2 from '../components/Appointment/Step2'
 
 // import dynamic from 'next/dynamic'
@@ -17,19 +17,19 @@ export default function Appointment() {
     specFilter: '',
     step: 1
   })
-  // function renderStep(step) {
-  //   switch (step) {
-  //     case 1:
-  //       return <Step1 info={info} setInfo={setInfo}></Step1>
-  //     case 2:
-  //       return <Step2 info={info} setInfo={setInfo}></Step2>
-  //     default:
-  //       return <Step1 info={info} setInfo={setInfo}></Step1>
-  //   }
-  // }
+  function renderStep(step) {
+    switch (step) {
+      case 1:
+        return <Step1 info={info} setInfo={setInfo}></Step1>
+      case 2:
+        return <Step2 info={info} setInfo={setInfo}></Step2>
+      default:
+        return <Step1 info={info} setInfo={setInfo}></Step1>
+    }
+  }
   return (
     <Layout>
-      <Step2 info={info} setInfo={setInfo}></Step2>
+      {renderStep(info.step)}
     </Layout>
   )
 }
