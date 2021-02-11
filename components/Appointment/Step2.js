@@ -57,6 +57,10 @@ const Step2 = (props) => {
             </div>
           </div>
           <div className="table" id="table">
+            {times.map((time, i) => 
+            i % 10 !== 0 ? 
+            <div className="elem" key={i}>{time}</div> : 
+            <div className="elem transparent" key={i}>{time}</div>)}
           </div>
         </div>
         <div className="doc_table">
