@@ -1,7 +1,7 @@
 import { useState } from 'react'
-// import getDates from './dates'
+import getDates from './dates'
 // import getTimes from './times'
-// let {dates, doc_num} = getDates()
+let {dates, doc_num} = getDates()
 // let times = getTimes()
 
 //import dynamic from 'next/dynamic'
