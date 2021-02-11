@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import getDates from './dates'
-import getTimes from './times'
-let {dates, doc_num} = getDates()
-let times = getTimes()
+// import getDates from './dates'
+// import getTimes from './times'
+// let {dates, doc_num} = getDates()
+// let times = getTimes()
 
 //import dynamic from 'next/dynamic'
 //import React from 'react'
@@ -10,28 +10,25 @@ const Step2 = (props) => {
   console.log(props)
   const {info, setInfo} = props
   // Transform
-  const [transformStyle, setTransform] = useState({
-    style: {transform: `translate(${0}px)`},
-    t_value: 0
-  })
-  // console.log(transformStyle.t_value)
-  function trans(step){
-    // console.log(step)
-    if((transformStyle.t_value < -1500 && step < 0)
-    || (transformStyle.t_value > 0 && step > 0)) {
-      return
-    }
-    let new_t = transformStyle.t_value + step
-    // console.log(transformStyle.t_value)
-    setTransform({
-      style: {transform: `translate(${new_t}px)`},
-      t_value: new_t
-    })
-    // console.log(transformStyle)
-    //scrollElem.style.transform = `translate(${t_value}px)`
-  }
+  // const [transformStyle, setTransform] = useState({
+  //   style: {transform: `translate(${0}px)`},
+  //   t_value: 0
+  // })
+  // // console.log(transformStyle.t_value)
+  // function trans(step){
+  //   // console.log(step)
+  //   if((transformStyle.t_value < -1500 && step < 0)
+  //   || (transformStyle.t_value > 0 && step > 0)) {
+  //     return
+  //   }
+  //   let new_t = transformStyle.t_value + step
+  //   // console.log(transformStyle.t_value)
+  //   setTransform({
+  //     style: {transform: `translate(${new_t}px)`},
+  //     t_value: new_t
+  //   })
+  // }
   // ----------------------------------------------------
-  //const isServer = () => typeof window === `undefined`
   return (
     <>
       <div className="section register_section" >
@@ -40,15 +37,10 @@ const Step2 = (props) => {
           <div className="section_header">Онлайн-запись на приём – Выбор врача</div>
         </div>
         <div className="tt_days">
-          <div className="wheel left" onClick={() => trans(100)}></div>
-          <div id="scroll" className="days_container" style={transformStyle.style} suppressHydrationWarning>
-            {typeof window === 'undefined' ? null : dates.map((day, i) => (
-            <div className="day" key={i}>
-              <div className="day_name">{day}</div>
-              <div className="doc_count">{doc_num[i]} врача</div>
-            </div>))}
+          <div className="wheel left"></div>
+          <div id="scroll" className="days_container">
           </div>
-          <div className="wheel right" onClick={() => trans(-100)}></div>
+          <div className="wheel right"></div>
         </div>
         <div className="doc_table">
           <div className="serv_doc_container">
@@ -60,10 +52,6 @@ const Step2 = (props) => {
             </div>
           </div>
           <div className="table" id="table">
-            {times.map((time, i) => 
-            i % 10 !== 0 ? 
-            <div className="elem" key={i}>{time}</div> : 
-            <div className="elem transparent" key={i}>{time}</div>)}
           </div>
         </div>
         <div className="doc_table">
@@ -76,10 +64,6 @@ const Step2 = (props) => {
             </div>
           </div>
           <div className="table" id="table1">
-            {times.map((time, i) => 
-            i % 10 !== 0 ? 
-            <div className="elem" key={100+i}>{time}</div> : 
-            <div className="elem transparent" key={100+i}>{time}</div>)}
           </div>
         </div>
       </div>

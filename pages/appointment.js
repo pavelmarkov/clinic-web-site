@@ -1,8 +1,8 @@
 import Layout from '../components/Layout'
 import { useState } from 'react'
 import Router from 'next/router'
-import Step1 from '../components/Appointment/Step1'
-// import Step2 from '../components/Appointment/Step2'
+//import Step1 from '../components/Appointment/Step1'
+import Step2 from '../components/Appointment/Step2'
 
 // import dynamic from 'next/dynamic'
 // const Step2 = dynamic(() => import('../components/Appointment/Step2'),
@@ -29,7 +29,7 @@ export default function Appointment() {
   // }
   return (
     <Layout>
-      <Step1 info={info} setInfo={setInfo}></Step1>
+      <Step2 info={info} setInfo={setInfo}></Step2>
     </Layout>
   )
 }
