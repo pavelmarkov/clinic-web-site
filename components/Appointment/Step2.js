@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import getDates from './dates'
-// import getTimes from './times'
+import getTimes from './times'
 let {dates, doc_num} = getDates()
-// let times = getTimes()
+let times = getTimes()
 
 //import dynamic from 'next/dynamic'
 //import React from 'react'
@@ -69,6 +69,10 @@ const Step2 = (props) => {
             </div>
           </div>
           <div className="table" id="table1">
+            {times.map((time, i) => 
+            i % 10 !== 0 ? 
+            <div className="elem" key={i}>{time}</div> : 
+            <div className="elem transparent" key={i}>{time}</div>)}
           </div>
         </div>
       </div>
