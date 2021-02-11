@@ -38,7 +38,12 @@ const Step2 = (props) => {
         </div>
         <div className="tt_days">
           <div className="wheel left"></div>
-          <div id="scroll" className="days_container">
+          <div id="scroll" className="days_container" suppressHydrationWarning>
+            {typeof window === 'undefined' ? null : dates.map((day, i) => (
+            <div className="day" key={i}>
+              <div className="day_name">{day}</div>
+              <div className="doc_count">{doc_num[i]} врача</div>
+            </div>))}
           </div>
           <div className="wheel right"></div>
         </div>
