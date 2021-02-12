@@ -58,6 +58,7 @@ const Layout = (props) => (
             border: none;
             color: white;
             margin: auto 1rem;
+            cursor: pointer;
           }
           .action_button {
             text-align: center;

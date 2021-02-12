@@ -59,7 +59,7 @@ const Step2 = (props) => {
           <div className="table" id="table">
             {times.map((time, i) => 
             i % 10 !== 0 ? 
-            <div className="elem" key={i}>{time}</div> : 
+            <div className="elem" key={i} onClick={() => setInfo({...info, step: 3})}>{time}</div> : 
             <div className="elem transparent" key={i}>{time}</div>)}
           </div>
         </div>
@@ -75,7 +75,7 @@ const Step2 = (props) => {
           <div className="table" id="table1">
             {times.map((time, i) => 
             i % 10 !== 0 ? 
-            <div className="elem" key={100+i}>{time}</div> : 
+            <div className="elem" key={100+i} onClick={() => setInfo({...info, step: 3})}>{time}</div> : 
             <div className="elem transparent" key={100+i}>{time}</div>)}
           </div>
         </div>
