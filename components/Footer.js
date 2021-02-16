@@ -55,6 +55,13 @@ const Footer = () => {
           display: block;
           margin-bottom: 15px;
         }
+        @media (max-width: 600px) { 
+          .footer_buttons > button {
+            padding: 5px 3px;
+            margin: 8px;
+            font-size: 12px;
+          }
+        }
       `}</style>
     </>
   )

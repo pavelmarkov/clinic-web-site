@@ -10,10 +10,10 @@ const Navbar = () => {
               <img src="./img/emblem.svg" alt="АКРОПОЛЬ" className="emblem"></img>
             </Link>
           </li>
-          <li>
-            <a href=""><img src="./img/place_mark.svg" alt="" className="place_mark"></img>Адрес и режим работы</a>
+          <li className="header_li">
+            <a href="" ><img src="./img/place_mark.svg" alt="" className="place_mark"></img>Адрес и режим работы</a>
           </li>
-          <li><a href="">COVID-19</a></li>
+          <li className="header_li"><a href="">COVID-19</a></li>
         </ul>
         <div className="header_actions">
           <Link href="/appointment"><button className="header_button green_button">Записаться на прием</button></Link>
@@ -194,9 +194,6 @@ const Navbar = () => {
           vertical-align: middle;
           margin-right: 5px;
         }
-
-        @media (min-width: 950px) {
-        }
         @media (max-width: 1335px) {
           * {
             font-size: 12px;
@@ -276,6 +273,21 @@ const Navbar = () => {
             margin-right: 0px;
           }
         }
+        @media (max-width: 600px) {
+          .header_li {
+            display: none !important;
+          }
+          .header_actions { 
+            display: none !important;
+          }
+          .emblem {
+            height: 4vh;
+            width: 20vw;
+          }
+          .header_menu {
+            display: none;
+          }
+        }        
       `}</style>
     </>
   )

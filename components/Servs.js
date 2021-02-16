@@ -6,7 +6,7 @@ const Servs = () => {
           <div className="section_header">Мы предлагаем</div>
           <button className="btn">Смотреть все</button>
         </div>
-        <div className="container">
+        <div className="container servs_container">
           <div className="serv">
             <img src="img/servs/034-heart 1.svg" alt=""></img>
             <div className="serv_signature">Кардиология</div>
@@ -135,6 +135,30 @@ const Servs = () => {
           }
           .serv_desc_buttons > button {
             padding: 0.8rem 2.8rem;
+          }
+          @media (max-width: 600px) {
+            .serv {
+              flex-grow: 2;
+              width: 40%;
+            }
+            .section_header_container {
+              display: block;
+            }
+            .section_header_container > * {
+              display: inline-block;
+            }
+            .serv_doc_container {
+              display: none;
+            }
+            .desc_header {
+              font-size: 20px;
+            }
+            .serv_desc_buttons > button {
+              padding: 5px 3px;
+              margin: 8px;
+              font-size: 12px;
+              width: 100%;
+            }
           }
         `}</style>
       </div>

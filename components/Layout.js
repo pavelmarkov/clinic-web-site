@@ -43,7 +43,7 @@ const Layout = (props) => (
             padding: 64px;
             max-width: 1440px !important;
             margin: 0 auto;
-          }
+          }       
           ul {
             list-style-type: none;
           }
@@ -96,6 +96,16 @@ const Layout = (props) => (
             justify-content: space-between;
             flex-wrap: wrap;
           }
+          @media (max-width: 600px) {
+            .container {
+              flex-wrap: wrap;
+              width: 100%;
+              flex-direction: none;
+            }
+            .section {
+              padding: 5%;
+            }
+          }   
       `}</style>
   </div>
 );

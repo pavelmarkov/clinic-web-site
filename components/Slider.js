@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Link from 'next/link';
 function Slider(ads) {
   let url = "./img/carousel/"//"http://localhost:1337"
   const [state, setState] = useState({
@@ -33,7 +34,7 @@ function Slider(ads) {
             <div className="caption"></div>
             <div className="caption_text">{ad.text}</div>
             { ad.button ? 
-              (<button className="action_button slideshow_button">Записаться на прием</button>)
+              (<Link href="/appointment"><button className="action_button slideshow_button">Записаться на прием</button></Link>)
               :
               ''
             }
@@ -232,12 +233,22 @@ function Slider(ads) {
             .caption_text {
               font-size: 32px;
               line-height: 32px;
+              left: 5%;
             }
             .action_button {
               padding: 6px 8px;
               margin-left: 4px;
             }
           }
+        @media (max-width: 600px) {
+          .caption_text {
+            font-size: 20px;
+            line-height: 28px;
+          }
+          .slideshow_button {
+            left: 5% !important;
+          } 
+        } 
         `}</style>
       </div>
   )
