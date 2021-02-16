@@ -77,6 +77,7 @@ const Servs = () => {
           }
           .serv_desc_image {
             width: 50%;
+            object-fit: cover;
           }
           .serv_desc_container {
             width: 50%;
