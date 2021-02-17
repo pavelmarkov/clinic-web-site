@@ -3,12 +3,14 @@
 import Layout from '../components/Layout'
 import Slider from '../components/Slider'
 import Servs from '../components/Servs'
+import AboutUs from '../components/AboutUs'
 
 export default function Home({ads}) {
   return (
     <Layout>
       {Slider(ads)}
       <Servs/>
+      <AboutUs/>
     </Layout>
   )
 }
