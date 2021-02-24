@@ -1,10 +1,18 @@
 import Link from 'next/link';
+import ToggleMenu from './ToggleMenu'
+import ModileMenu from './MobileMenu'
+import { useState } from 'react'
 
 const Navbar = () => {
+  const [isOpen, setMenuState] = useState(false)
   return (
     <>
+      <ModileMenu isOpen={isOpen} setMenuState={setMenuState}></ModileMenu>
       <header className="header">
         <ul className="header_links">
+          <li>
+            <ToggleMenu isOpen={isOpen} setMenuState={setMenuState}></ToggleMenu>
+          </li>
           <li>
             <Link href="/">
               <img src="./img/emblem.svg" alt="АКРОПОЛЬ" className="emblem"></img>

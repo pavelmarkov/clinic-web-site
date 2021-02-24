@@ -32,7 +32,6 @@ const AboutUs = () => {
           width: 60%;
           margin-top: 1rem;
           margin-bottom: 1rem;
-          font-size: 1.1vw;
         }
         .about_us_section {
           background-color: rgba(128, 125, 125, 0.05);
