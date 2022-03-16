@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+### A website for some clinic
+#### Using Next.js and Strapi
+##### [Link to the website](https://randomclinic.vercel.app/)
