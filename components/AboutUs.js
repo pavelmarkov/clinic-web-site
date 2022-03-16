@@ -4,19 +4,21 @@ const AboutUs = () => {
     <>
       <div className="section about_us_section">
         <div className="section_header">О нас</div>
-        <p className="about_us_text">В клинике Акрополь клиенты получают квалифицированную помощь по всем основным направлениям современной медицины.
-        Мы проводим диагностику и лечение различных видов заболеваний и нарушений мочеполовой и иммунной систем, кожных и
-        аллергических заболеваний, органов кровообращенияи пищеварения, терапию, гомеопатию, косметологические процедуры и
-        другие медицинские услуги. Наша клиника оснащенна всеми современными техническими средствами, позволяющие проводить
-        максимально точные исследования организма и выявлять текущие заболевания.На основе полученных данных опытные врачи
-        разрабатывают необходимый курс лечения, который вернёт пациента к полноценной здоровой жизни. Специалисты нашей клиники
-        проведут консультацию по всем интересующим Вас вопросам. Наличие полиса и прописки не требуется.
-        К нам приходят семьями, а врачей рекомендуют друзьям и близким. Нам доверяют, а это главный показатель качества
-        предоставляемых нами услуг.</p>
+        <p className="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fuga eligendi doloribus tenetur voluptatem iste ipsa consectetur ullam, sequi est?
+          Molestias nobis harum veritatis quam eligendi pariatur impedit, asperiores cumque exercitationem?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quae inventore exercitationem,
+          odio vel esse fugiat sunt expedita consectetur assumenda odit magni perspiciatis voluptas soluta
+          quaerat dolore totam, consequuntur aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fuga eligendi doloribus tenetur voluptatem iste ipsa consectetur ullam, sequi est?
+          Molestias nobis harum veritatis quam eligendi pariatur impedit, asperiores cumque exercitationem?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quae inventore exercitationem,
+          odio vel esse fugiat sunt expedita consectetur assumenda odit magni perspiciatis voluptas soluta
+          quaerat dolore totam, consequuntur aut!</p>
         <div className="about_us_rect"></div>
         <img className="chief_image" src="/img/chief.png"></img>
         <div className="chief_signature">
-          <div className="chief_name">Маллаев Руслан Шахбанович</div>
+          <div className="chief_name">Фёдор Григорьевич Углов</div>
           <div className="chief_spec">Главный врач</div>
         </div>
       </div>

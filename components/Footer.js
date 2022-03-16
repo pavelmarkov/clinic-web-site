@@ -22,9 +22,9 @@ const Footer = () => {
             </div>
             <div className="contacts">
               <ul>
-                <li className="header_phone_number">+7 (988) 655-13-13</li>
-                <li className="header_phone_number">+7 (8722) 55-13-13</li>
-                <li className="email">akropolmed@mail.ru</li>
+                <li className="header_phone_number">+7 (988) 555-35-55</li>
+                <li className="header_phone_number">+7 (8722) 555-35-55</li>
+                <li className="email">clinic@mail.ru</li>
               </ul>
             </div>
           </div>

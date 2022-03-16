@@ -1,17 +1,17 @@
 const Step3 = (props) => {
-  const {info, setInfo} = props
+  const { info, setInfo } = props
   function handleApproval() {
     alert(JSON.stringify(info))
-    setInfo({...info, step: 2})
+    setInfo({ ...info, step: 2 })
   }
   return (
     <>
       <div id="myModal" className="modal">
         <div className="modal-content">
-          <span className="close" onClick={() => setInfo({...info, step: 2})}>&times;</span>
+          <span className="close" onClick={() => setInfo({ ...info, step: 2 })}>&times;</span>
           <div className="section_header">Онлайн-запись на приём – Подтверждение записи</div>
           <div className="label">Ваш врач:</div>
-          <div className="doc_name">Маллаев Руслан Шахбанович</div>
+          <div className="doc_name">Фёдор Григорьевич Углов</div>
           <div className="datetime">вторник 17 августа, в 09:30</div>
           <div className="label">Ваш номер ОМС или ДМС</div>
           <input type="text" placeholder="Номер полиса"></input>

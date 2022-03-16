@@ -7,7 +7,7 @@ const Profile = () => {
     <Layout>
       <div className="section profile_container">
         <div className="user_info">
-          <img src="./img/profile/profile_photo.jpg" alt="" onClick={() => {setUser({})}}></img>
+          <img src="./img/profile/profile_photo.jpg" alt="" onClick={() => { setUser({}) }}></img>
           <div className="info">
             <div className="personal_info">
               <div className="name">Иванов Иван Иванович ({userData.identifier})</div>
@@ -29,14 +29,14 @@ const Profile = () => {
             <tr>
               <td>12.08.2020</td>
               <td>Биохимия расширенная мк</td>
-              <td className="td_doc">Смирнов Иван Васильевич</td>
+              <td className="td_doc">Смирнов Антон Сергеевич</td>
               <td>1 шт.</td>
               <td>3400 руб.</td>
             </tr>
             <tr>
               <td>12.08.2020</td>
               <td>Взятие биоматериаоа (кровь венозная)</td>
-              <td className="td_doc">Рабаданова Хадижат Магомедовна</td>
+              <td className="td_doc">Петрова Ирина Константиновна</td>
               <td>1 шт.</td>
               <td>3400 руб.</td>
             </tr>

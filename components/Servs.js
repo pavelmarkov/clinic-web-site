@@ -1,60 +1,60 @@
 
 const Servs = () => {
   return (
-      <div className="section">
-        <div className="section_header_container">
-          <div className="section_header">Мы предлагаем</div>
-          <button className="btn">Смотреть все</button>
+    <div className="section">
+      <div className="section_header_container">
+        <div className="section_header">Мы предлагаем</div>
+        <button className="btn">Смотреть все</button>
+      </div>
+      <div className="container servs_container">
+        <div className="serv">
+          <img src="img/servs/034-heart 1.svg" alt=""></img>
+          <div className="serv_signature">Кардиология</div>
         </div>
-        <div className="container servs_container">
-          <div className="serv">
-            <img src="img/servs/034-heart 1.svg" alt=""></img>
-            <div className="serv_signature">Кардиология</div>
-          </div>
-          <div className="serv">
-            <img src="img/servs/032-kidneys 1.svg" alt=""></img>
-            <div className="serv_signature">Урология</div>
-          </div>
-          <div className="serv">
-            <img src="img/servs/036-womb 1.svg" alt=""></img>
-            <div className="serv_signature">Гинекология</div>
-          </div><div className="serv">
-            <img src="img/servs/003-stethoscope 1.svg" alt=""></img>
-            <div className="serv_signature">Терапевт</div>
-          </div>
-          <div className="serv">
-            <img src="img/servs/026-test tube 1.svg" alt=""></img>
-            <div className="serv_signature">Лаборатория</div>
-          </div>
-          <div className="serv">
-            <img src="img/servs/007-electrocardiogram 1.svg" alt=""></img>
-            <div className="serv_signature">УЗИ</div>
-          </div>
+        <div className="serv">
+          <img src="img/servs/032-kidneys 1.svg" alt=""></img>
+          <div className="serv_signature">Урология</div>
         </div>
-        <div className="serv_description">
-          <img src="/img/servs/desc_photo_cardio.png" alt="" className="serv_desc_image"></img>
-          <div className="serv_desc_container">
-            <div className="desc_header">Кардиология</div>
-            <ul className="desc_list">
-              <li className="desc_list_item">Диагностика</li>
-              <li className="desc_list_item">Первичная и вторичная профилактика СС3</li>
-              <li className="desc_list_item">Коррекция образа жизни</li>
-              <li className="desc_list_item">Медикаментозная терапия</li>
-            </ul>
-            <div className="serv_doc_container">
-              <img src="/img/servs/doc1.png" alt=""></img>
-              <div className="doc_desc">
-                <div className="doc_spec">Врач-кардиолог</div>
-                <div className="doc_name">Меджидова Асият Темирболатовна</div>
-              </div>
-            </div>
-            <div className="serv_desc_buttons">
-              <button className="btn violet_btn">Записаться на прием</button>
-              <button className="btn transparent_btn">Цены</button>
+        <div className="serv">
+          <img src="img/servs/036-womb 1.svg" alt=""></img>
+          <div className="serv_signature">Гинекология</div>
+        </div><div className="serv">
+          <img src="img/servs/003-stethoscope 1.svg" alt=""></img>
+          <div className="serv_signature">Терапевт</div>
+        </div>
+        <div className="serv">
+          <img src="img/servs/026-test tube 1.svg" alt=""></img>
+          <div className="serv_signature">Лаборатория</div>
+        </div>
+        <div className="serv">
+          <img src="img/servs/007-electrocardiogram 1.svg" alt=""></img>
+          <div className="serv_signature">УЗИ</div>
+        </div>
+      </div>
+      <div className="serv_description">
+        <img src="/img/servs/desc_photo_cardio.png" alt="" className="serv_desc_image"></img>
+        <div className="serv_desc_container">
+          <div className="desc_header">Кардиология</div>
+          <ul className="desc_list">
+            <li className="desc_list_item">Диагностика</li>
+            <li className="desc_list_item">Первичная и вторичная профилактика СС3</li>
+            <li className="desc_list_item">Коррекция образа жизни</li>
+            <li className="desc_list_item">Медикаментозная терапия</li>
+          </ul>
+          <div className="serv_doc_container">
+            <img src="/img/servs/doc1.png" alt=""></img>
+            <div className="doc_desc">
+              <div className="doc_spec">Врач-кардиолог</div>
+              <div className="doc_name">Акулова Лидия Семеновна</div>
             </div>
           </div>
+          <div className="serv_desc_buttons">
+            <button className="btn violet_btn">Записаться на прием</button>
+            <button className="btn transparent_btn">Цены</button>
+          </div>
         </div>
-        <style jsx>{`
+      </div>
+      <style jsx>{`
           .serv {
             margin: 1rem;
             background: #ffffff;
@@ -161,7 +161,7 @@ const Servs = () => {
             }
           }
         `}</style>
-      </div>
+    </div>
   )
 }
 

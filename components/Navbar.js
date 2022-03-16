@@ -15,7 +15,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/">
-              <img src="./img/emblem.svg" alt="АКРОПОЛЬ" className="emblem"></img>
+              {/* <img src="./img/logo2.png" alt="АКРОПОЛЬ" className="emblem"></img> */}
+              Clinic Logo
             </Link>
           </li>
           <li className="header_li">
@@ -32,8 +33,8 @@ const Navbar = () => {
             <li>
               <a >Обратный звонок</a>
             </li>
-            <li className="header_phone_number">+7 (988) 655-13-13</li>
-            <li className="header_phone_number">+7 (8722) 55-13-13</li>
+            <li className="header_phone_number">+7 (988) 555-35-55</li>
+            <li className="header_phone_number">+7 (8722) 555-35-55</li>
           </ul>
         </div>
       </header>

@@ -6,16 +6,16 @@ import Footer from './Footer'
 const Layout = (props) => (
   <div>
     <Head>
-      <title>Akropol</title>
+      <title>Clinic</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <link rel="icon" href="img/logo_.png" />
+      <link rel="icon" href="img/logo2.png" />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"></link>
     </Head>
-    <Navbar/>
+    <Navbar />
     <div className="container">
       {props.children}
     </div>
-    <Footer/>
+    <Footer />
     <style jsx global>{`
         * {
             box-sizing: border-box;
